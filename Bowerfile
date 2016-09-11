@@ -1,6 +1,0 @@
-asset 'bootstrap', '3.3.6'
-asset 'datatables', '1.10.10'
-asset 'font-awesome', '4.6.3'
-asset 'jquery', '3.1.0'
-asset 'reveal.js', '3.3.0'
-asset 'summernote', '0.8.2'

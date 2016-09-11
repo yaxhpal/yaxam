@@ -1,5 +1,5 @@
 {
-  "name": "dsl-generated dependencies",
+  "name": "Yaxam dependencies",
   "dependencies": {
     "bootstrap": "3.3.6",
     "datatables": "1.10.10",

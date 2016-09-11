@@ -10,8 +10,8 @@
 # Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 # about supported directives.
 #
-#= require jquery/dist/jquery.js
+#= require jquery
 #= require bootstrap-sprockets
-#= require summernote/dist/plugin/summernote.js
+#= require summernote
 #= require reveal.js/js/reveal.js
 #= require_tree .
