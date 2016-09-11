@@ -19,7 +19,8 @@ gem 'pg'
 gem 'bootstrap-sass', '~> 3.3.6'
 # Bundler-like DSL + rake tasks for Bower on Rails
 gem "bower-rails", "~> 0.10.0"
-
+ # install and compile Bower components on push
+gem 'rails_12factor'
 
 group :development do
   gem 'web-console', '~> 2.0'
