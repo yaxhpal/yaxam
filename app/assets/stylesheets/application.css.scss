@@ -11,10 +11,20 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require summernote/dist/summernote.css
+ *= require summernote
  *= require reveal.js/css/reveal.css
  *= require_tree .
  *= require_self
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+@font-face{
+	font-family:"summernote";
+	src:url(asset_path("font/summernote.eot?ad8d7e2d177d2473aecd9b35d16211fb"));
+	src:url(asset_path("font/summernote.eot?#iefix")) format("embedded-opentype"),
+	url(asset_path("font/summernote.woff?ad8d7e2d177d2473aecd9b35d16211fb")) format("woff"),
+	url(asset_path("font/summernote.ttf?ad8d7e2d177d2473aecd9b35d16211fb")) format("truetype");
+	font-style:normal;
+	font-weight:normal;
+}
