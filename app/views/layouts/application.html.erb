@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Xam</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		   "HTML-CSS": {
+		        scale: 100,
+		        minScaleAdjust: 50,
+		        linebreaks: { automatic:true }, 
+		        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+		    tex2jax: {
+		        inlineMath: [
+		            ["$", "$"],
+		            ["\\(", "\\)"]
+		        ],
+		        displayMath: [
+		            ["$$", "$$"],
+		            ["\\[", "\\]"]
+		        ],
+		        processEscapes: true,
+		        ignoreClass: "no-mathjax",
+		        multiLine: true,
+		        noReflows: true
+		    }
+		});
+	</script>  
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full.js"></script>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

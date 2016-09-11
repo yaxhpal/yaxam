@@ -1,29 +1,30 @@
 source 'https://rubygems.org'
 ruby '2.2.2'
+
 gem 'rails', '4.2.4'
-gem 'sass-rails', '~> 5.0'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '~>5.0.4'
+# Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+# Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
-gem 'jquery-rails'
-gem 'jbuilder', '~> 2.0'
-gem 'pg'
-gem 'bootstrap', '~> 4.0.0.alpha3.1'
-gem 'high_voltage'
+# Use Slim as templating framework
 gem 'slim-rails'
-gem 'therubyracer', :platform=>:ruby
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 2.0'
+# Use Postgres as the database for Active Record
+gem 'pg'
+# Bootstrap web framework to be used
+gem 'bootstrap-sass', '~> 3.3.6'
+# Bundler-like DSL + rake tasks for Bower on Rails
+gem "bower-rails", "~> 0.10.0"
+
 
 group :development do
   gem 'web-console', '~> 2.0'
-  gem 'spring'
   gem 'better_errors'
-  gem 'guard-bundler'
-  gem 'guard-rails'
-  gem 'guard-rspec'
-  gem 'rails_layout'
-  gem 'rb-fchange', :require=>false
-  gem 'rb-fsevent', :require=>false
-  gem 'rb-inotify', :require=>false
-  gem 'spring-commands-rspec'
+  gem 'awesome_print'
 end
 
 group :test do
@@ -39,3 +40,4 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'byebug'
 end
+

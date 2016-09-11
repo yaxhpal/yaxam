@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Greeting string:
+  = @home_page.greeting_string
+p
+  strong Visits:
+  = @home_page.visits
+
+= link_to 'Edit', edit_home_page_path(@home_page)
+'|
+= link_to 'Back', home_pages_path

@@ -1,0 +1,23 @@
+h1 Listing home_pages
+
+table
+  thead
+    tr
+      th Greeting string
+      th Visits
+      th
+      th
+      th
+
+  tbody
+    - @home_pages.each do |home_page|
+      tr
+        td = home_page.greeting_string
+        td = home_page.visits
+        td = link_to 'Show', home_page
+        td = link_to 'Edit', edit_home_page_path(home_page)
+        td = link_to 'Destroy', home_page, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Home page', new_home_page_path

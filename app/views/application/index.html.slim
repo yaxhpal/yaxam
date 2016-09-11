@@ -1,0 +1,35 @@
+.site-wrapper
+  .site-wrapper-inner
+    .cover-container
+      .masthead.clearfix
+        .inner
+          h3.masthead-brand Cover
+          nav
+            ul.nav.masthead-nav
+              li.active
+                a href="#" data-target="#mathModal" data-toggle="modal" Show Math
+      .inner.cover
+        #summernote.no-mathjax
+          p Hello Summernote
+      .mastfoot
+        .inner
+          p
+            | Cover template for
+            a href="http://getbootstrap.com"  Bootstrap
+            | by
+            a href="https://twitter.com/mdo"  @mdo
+
+.modal.fade id="mathModal" aria-labelledby="gridSystemModalLabel" role="dialog" tabindex="-1" 
+  .modal-dialog role="document" 
+    .modal-content
+      .modal-header
+        button.close aria-label="Close" data-dismiss="modal" type="button" 
+          span aria-hidden="true"  &times;
+        h4#gridSystemModalLabel.modal-title Math Formulae
+      .modal-body
+        .row
+          .col-md-12
+            #mathcontent style="color: black;"
+      .modal-footer
+        button.btn.btn-default data-dismiss="modal" type="button"  Close
+        button.btn.btn-primary type="button"  Save changes

@@ -1,0 +1,15 @@
+= form_for @home_page do |f|
+  - if @home_page.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@home_page.errors.count, "error")} prohibited this home_page from being saved:"
+      ul
+        - @home_page.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :greeting_string
+    = f.text_field :greeting_string
+  .field
+    = f.label :visits
+    = f.number_field :visits
+  .actions = f.submit
