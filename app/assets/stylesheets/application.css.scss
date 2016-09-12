@@ -21,10 +21,10 @@
 
 @font-face{
 	font-family:"summernote";
-	src:url(asset_path("font/summernote.eot"));
-	src:url(asset_path("font/summernote.eot?#iefix")) format("embedded-opentype"),
-	url(asset_path("font/summernote.woff")) format("woff"),
-	url(asset_path("font/summernote.ttf")) format("truetype");
+	src:url(asset_path("fonts/summernote.eot"));
+	src:url(asset_path("fonts/summernote.eot?#iefix")) format("embedded-opentype"),
+	url(asset_path("fonts/summernote.woff")) format("woff"),
+	url(asset_path("fonts/summernote.ttf")) format("truetype");
 	font-style:normal;
 	font-weight:normal;
 }
